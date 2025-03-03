@@ -20,7 +20,7 @@ class PineconeService:
         except Exception as e:
             raise Exception(f"Failed to initialize Pinecone service: {str(e)}")
 
-    async def query_documents(self, query: str, namespace: str = None, top_k: int = 5) -> Dict[str, Any]:
+    async def query_documents(self, query: str, namespace: str = None, top_k: int = 10) -> Dict[str, Any]:
         """
         Query documents using the provided query string.
 
