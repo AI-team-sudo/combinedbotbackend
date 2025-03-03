@@ -37,7 +37,7 @@ class OpenAIService:
                     {"role": "user", "content": chat_prompt}
                 ],
                 temperature=0.7,
-                max_tokens=1000
+                max_tokens=1500
             )
             return response.choices[0].message.content
         except Exception as e:
